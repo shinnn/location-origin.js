@@ -1,6 +1,7 @@
 # location-origin.js
 
 [![Bower version](https://badge.fury.io/bo/location-origin.png)](http://badge.fury.io/bo/location-origin)
+[![Build Status](https://travis-ci.org/shinnn/location-origin.js.svg?branch=master)](https://travis-ci.org/shinnn/location-origin.js)
 [![devDependency Status](https://david-dm.org/shinnn/location-origin.js/dev-status.svg?theme=shields.io)](https://david-dm.org/shinnn/location-origin.js#info=devDependencies)
 
 [![browser support](https://ci.testling.com/shinnn/location-origin.js.png)](https://ci.testling.com/shinnn/location-origin.js)
