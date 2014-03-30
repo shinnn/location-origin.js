@@ -22,6 +22,7 @@
     "gulp-coffeelint": "^0.3.1",
     "gulp-header": "^1.0.2",
     "gulp-jshint": "^1.5.1",
+    "gulp-jsonlint": "0.0.3",
     "gulp-load-plugins": "^0.4.0",
     "jshint-stylish": "^0.1.5",
     "tape": "^2.12.1"
@@ -41,7 +42,7 @@
       "firefox/20",
       "firefox/22..latest",
       "safari/4..latest",
-      "opera/10..latest",
+      "opera/11..latest",
       "iphone/6..latest",
       "ipad/6..latest",
       "android-browser/latest"

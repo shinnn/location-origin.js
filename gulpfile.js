@@ -12,10 +12,13 @@ var banner = [
   '*/\n'
 ].join('\n');
 
-gulp.task('jshint', function() {
+gulp.task('lint', function() {
   gulp.src('*.js')
     .pipe($.jshint())
     .pipe($.jshint.reporter(stylish));
+  gulp.src('*.json')
+    .pipe($.jsonlint())
+    .pipe($.jsonlint.reporter());
 });
 
 gulp.task('coffee', function() {
@@ -33,8 +36,8 @@ gulp.task('coffee', function() {
 
 gulp.task('watch', function() {
   gulp.watch(['src/*.coffee'], ['coffee']);
-  gulp.watch(['*.js'], ['jshint']);
+  gulp.watch(['*.{js,json}'], ['lint']);
 });
 
-gulp.task('build', ['jshint', 'coffee']);
+gulp.task('build', ['lint', 'coffee']);
 gulp.task('default', ['build', 'watch']);
