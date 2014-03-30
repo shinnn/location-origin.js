@@ -1,8 +1,11 @@
 # location-origin.js
 
-Polyfill for [`window.location.origin`](http://www.w3schools.com/jsref/prop_loc_origin.asp)
+[![Bower version](https://badge.fury.io/bo/location-origin.png)](http://badge.fury.io/bo/location-origin)
+[![devDependency Status](https://david-dm.org/shinnn/location-origin.js/dev-status.svg?theme=shields.io)](https://david-dm.org/shinnn/location-origin.js#info=devDependencies)
 
 [![browser support](https://ci.testling.com/shinnn/location-origin.js.png)](https://ci.testling.com/shinnn/location-origin.js)
+
+Polyfill for [`window.location.origin`](http://www.w3schools.com/jsref/prop_loc_origin.asp)
 
 ```js
 // On http://yourhost:5000/path/to/page
