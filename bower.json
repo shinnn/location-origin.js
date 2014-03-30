@@ -9,6 +9,7 @@
     "polyfill",
     "compatibilization",
     "cross-browser",
+    "ie-fix",
     "property"
   ],
   "main": "dist/location-origin.js",
