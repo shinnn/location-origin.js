@@ -3,7 +3,7 @@
   "description": "Polyfill for window.location.origin",
   "main": "location-origin.js",
   "scripts": {
-    "test": "gulp build && testling"
+    "test": "gulp build"
   },
   "author": "",
   "repository": {
