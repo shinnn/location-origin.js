@@ -1,16 +1,20 @@
 {
   "name": "location-origin.js",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Polyfill for window.location.origin",
   "keywords": [
     "location",
+    "origin",
     "url",
     "polyfill",
     "compatibilization",
+    "cross-browser",
     "property"
   ],
   "repo": "shinnn/location-origin.js",
   "main": "dist/location-origin.js",
-  "scripts": ["dist/location-origin.js"],
+  "scripts": [
+    "dist/location-origin.js"
+  ],
   "license": "MIT"
 }

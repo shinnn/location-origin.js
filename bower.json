@@ -4,9 +4,11 @@
   "description": "Polyfill for window.location.origin",
   "keywords": [
     "location",
+    "origin",
     "url",
     "polyfill",
     "compatibilization",
+    "cross-browser",
     "property"
   ],
   "main": "dist/location-origin.js",
@@ -18,8 +20,9 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "test.js",
     "src",
+    "test.js",
+    "gulpfile.js",
     "component.json"
   ]
 }
