@@ -1,0 +1,25 @@
+{
+  "name": "location-origin.js",
+  "version": "0.0.0",
+  "description": "Polyfill for window.location.origin",
+  "keywords": [
+    "location",
+    "url",
+    "polyfill",
+    "compatibilization",
+    "property"
+  ],
+  "main": "dist/location-origin.js",
+  "homepage": "https://github.com/shinnn/location-origin.js",
+  "authors": [
+    "Shinnosuke Watanabe <snnskwtnb@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test.js",
+    "src",
+    "component.json"
+  ]
+}

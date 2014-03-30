@@ -1,0 +1,41 @@
+{
+  "name": "location-origin",
+  "description": "Polyfill for window.location.origin",
+  "main": "location-origin.js",
+  "scripts": {
+    "pretest": "gulp build",
+    "test": "tape test.js"
+  },
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shinnn/location-origin.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shinnn/location-origin.js/issues"
+  },
+  "homepage": "https://github.com/shinnn/location-origin.js",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-coffee": "^1.4.1",
+    "gulp-coffeelint": "^0.3.1",
+    "gulp-jshint": "^1.5.1",
+    "gulp-load-plugins": "^0.4.0",
+    "jshint-stylish": "^0.1.5",
+    "tape": "^2.12.1"
+  },
+  "testling": {
+    "files": "test.js",
+    "browsers": [
+      "ie/6..latest",
+      "chrome/22..latest",
+      "firefox/16..latest",
+      "safari/latest",
+      "opera/11.0..latest",
+      "iphone/6",
+      "ipad/6",
+      "android-browser/latest"
+    ]
+  }
+}

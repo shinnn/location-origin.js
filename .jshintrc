@@ -1,0 +1,6 @@
+{
+  "trailing": true,
+  "indent": 2,
+  "browser": true,
+  "node": true
+}
