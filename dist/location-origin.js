@@ -9,7 +9,7 @@
 
   if (!loc.origin) {
     value = "" + loc.protocol + "//" + loc.hostname + (loc.port ? ":" + loc.port : '');
-    if (!(typeof Object.defineroperty === "function" ? Object.defineroperty(loc, 'origin', {
+    if (!(typeof Object.defineProperty === "function" ? Object.defineProperty(loc, 'origin', {
       value: value,
       enumerable: true
     }) : void 0)) {
