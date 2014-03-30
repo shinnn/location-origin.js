@@ -5,5 +5,7 @@ unless loc.origin
   #{ loc.protocol }//#{ loc.hostname }#{ if loc.port then ":#{ loc.port }" else '' }
   "
 
-  unless Object.defineProperty? loc, 'origin', {value, enumerable: true}
+  try
+    Object.defineProperty loc, 'origin', {value, enumerable: true}
+  catch
     loc.origin = value

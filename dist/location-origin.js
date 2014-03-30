@@ -9,10 +9,12 @@
 
   if (!loc.origin) {
     value = "" + loc.protocol + "//" + loc.hostname + (loc.port ? ":" + loc.port : '');
-    if (!(typeof Object.defineProperty === "function" ? Object.defineProperty(loc, 'origin', {
-      value: value,
-      enumerable: true
-    }) : void 0)) {
+    try {
+      Object.defineProperty(loc, 'origin', {
+        value: value,
+        enumerable: true
+      });
+    } catch (_error) {
       loc.origin = value;
     }
   }
