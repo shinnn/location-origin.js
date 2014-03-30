@@ -1,11 +1,20 @@
 require('./dist/location-origin.js');
 var test = require('tape');
 
-test('simple comparisons', function(t) {
-  t.plan(1);
-  var expected = window.location.protocol + '//' +
-                 window.location.hostname +
-                 (window.location.port ? ':' + window.location.port: '');
+test(
+  'window.location.origin should returns protocol, hostname and port number.',
+  function(t) {
+    t.plan(1);
   
-  t.equal(location.origin, expected);
-});
+    var port = '';
+    if (window.location.port) {
+      port = ':' + window.location.port;
+    }
+  
+    var expected = window.location.protocol + '//' +
+                   window.location.hostname +
+                   port;
+  
+    t.equal(location.origin, expected);
+  }
+);
