@@ -1,3 +1,7 @@
+/*!
+ * location-origin.js | (c) Shinnosuke Watanabe, MIT
+ * https://github.com/shinnn/location-origin.js
+*/
 (function() {
   var loc, value;
 
