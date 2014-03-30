@@ -2,6 +2,8 @@
 
 Polyfill for [`window.location.origin`](http://www.w3schools.com/jsref/prop_loc_origin.asp)
 
+[![browser support](https://ci.testling.com/shinnn/location-origin.js.png)](https://ci.testling.com/shinnn/location-origin.js)
+
 ```js
 // On http://yourhost:5000/path/to/page
 
