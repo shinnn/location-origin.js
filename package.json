@@ -29,12 +29,20 @@
     "files": "test.js",
     "browsers": [
       "ie/6..latest",
-      "chrome/22..latest",
-      "firefox/16..latest",
-      "safari/latest",
-      "opera/11.0..latest",
-      "iphone/6",
-      "ipad/6",
+      "chrome/4",
+      "chrome/10",
+      "chrome/15",
+      "chrome/20",
+      "chrome/28..latest",
+      "firefox/3",
+      "firefox/10",
+      "firefox/15",
+      "firefox/20",
+      "firefox/22..latest",
+      "safari/4..latest",
+      "opera/10..latest",
+      "iphone/6..latest",
+      "ipad/6..latest",
       "android-browser/latest"
     ]
   }
