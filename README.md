@@ -1,6 +1,7 @@
 # location-origin.js
 
 [![Bower version](https://badge.fury.io/bo/location-origin.svg)](http://badge.fury.io/bo/location-origin)
+[![NPM version](https://badge.fury.io/js/location-origin.svg)](http://badge.fury.io/js/location-origin)
 [![Build Status](https://travis-ci.org/shinnn/location-origin.js.svg?branch=master)](https://travis-ci.org/shinnn/location-origin.js)
 [![devDependency Status](https://david-dm.org/shinnn/location-origin.js/dev-status.svg?theme=shields.io)](https://david-dm.org/shinnn/location-origin.js#info=devDependencies)
 
@@ -30,7 +31,7 @@ bower i --save location-origin
 component install shinnn/location-origin.js
 ```
 
-#### [npm](http://component.io/) (Use with [Browserify](http://browserify.org/) etc.)
+#### [npm](https://www.npmjs.org/) (Use with [Browserify](http://browserify.org/) etc.)
 
 ```
 npm i --save location-origin
