@@ -1,6 +1,6 @@
 # location-origin.js
 
-[![Bower version](https://badge.fury.io/bo/location-origin.png)](http://badge.fury.io/bo/location-origin)
+[![Bower version](https://badge.fury.io/bo/location-origin.svg)](http://badge.fury.io/bo/location-origin)
 [![Build Status](https://travis-ci.org/shinnn/location-origin.js.svg?branch=master)](https://travis-ci.org/shinnn/location-origin.js)
 [![devDependency Status](https://david-dm.org/shinnn/location-origin.js/dev-status.svg?theme=shields.io)](https://david-dm.org/shinnn/location-origin.js#info=devDependencies)
 
@@ -30,6 +30,12 @@ bower i --save location-origin
 component install shinnn/location-origin.js
 ```
 
+#### [npm](http://component.io/) (Use with [Browserify](http://browserify.org/) etc.)
+
+```
+npm i --save location-origin
+```
+
 ### Standalone
 
 [Download the script file directly.](https://raw.githubusercontent.com/shinnn/location-origin.js/master/dist/location-origin.js "view raw")
@@ -41,6 +47,4 @@ Thanks, [tosbourn](https://github.com/tosbourn).
 
 ## License
 
-Copyright (c) 2014 [Shinnosuke Watanabe](https://github.com/shinnn)
-
-Licensed under [the MIT LIcense](./LICENSE).
+[The Unlicense](./LICENSE)

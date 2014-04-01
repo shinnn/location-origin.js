@@ -1,8 +1,5 @@
-/*!
- * location-origin.js | (c) Shinnosuke Watanabe, MIT
- * https://github.com/shinnn/location-origin.js
-*/
 (function() {
+  'use strict';
   var loc, value;
 
   loc = window.location;
