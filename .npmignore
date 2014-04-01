@@ -1,0 +1,7 @@
+.travis.yml
+.jshintrc
+gulpfile.js
+src/
+test.js
+bower.json
+component.json
