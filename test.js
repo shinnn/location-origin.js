@@ -4,6 +4,8 @@ var test = require('tape');
 test(
   'window.location.origin should returns protocol, hostname and port number.',
   function(t) {
+    'use strict';
+    
     t.plan(1);
   
     var port = '';

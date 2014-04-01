@@ -1,3 +1,9 @@
+# location-origin.js
+# Released under the Unlicense
+# https://github.com/shinnn/location-origin.js
+
+'use strict'
+
 loc = window.location
 
 unless loc.origin
