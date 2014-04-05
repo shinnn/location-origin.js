@@ -3,11 +3,11 @@
 [![Bower version](https://badge.fury.io/bo/location-origin.svg)](http://badge.fury.io/bo/location-origin)
 [![NPM version](https://badge.fury.io/js/location-origin.svg)](http://badge.fury.io/js/location-origin)
 [![Build Status](https://travis-ci.org/shinnn/location-origin.js.svg?branch=master)](https://travis-ci.org/shinnn/location-origin.js)
-[![devDependency Status](https://david-dm.org/shinnn/location-origin.js/dev-status.svg?theme=shields.io)](https://david-dm.org/shinnn/location-origin.js#info=devDependencies)
+[![devDependency Status](https://david-dm.org/shinnn/location-origin.js/dev-status.svg)](https://david-dm.org/shinnn/location-origin.js#info=devDependencies)
 
 [![browser support](https://ci.testling.com/shinnn/location-origin.js.png)](https://ci.testling.com/shinnn/location-origin.js)
 
-Polyfill for [`window.location.origin`](http://www.w3schools.com/jsref/prop_loc_origin.asp)
+Polyfill for [`window.location.origin`](http://url.spec.whatwg.org/#dom-url-origin)
 
 ```js
 // On http://yourhost:5000/path/to/page
