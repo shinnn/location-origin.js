@@ -4,7 +4,8 @@
   "description": "Polyfill for window.location.origin",
   "main": "dist/location-origin.js",
   "scripts": {
-    "test": "gulp build"
+    "build": "gulp build",
+    "test": "npm run-script build && testling"
   },
   "author": {
     "name": "Shinnosuke Watanabe",
@@ -38,15 +39,17 @@
     "browser"
   ],
   "devDependencies": {
-    "gulp": "^3.6.0",
-    "gulp-coffee": "^1.4.1",
-    "gulp-coffeelint": "^0.3.1",
+    "browserify": "^3.44.2",
+    "gulp": "^3.6.2",
+    "gulp-coffee": "^1.4.2",
+    "gulp-coffeelint": "^0.3.2",
     "gulp-header": "^1.0.2",
-    "gulp-jshint": "^1.5.3",
+    "gulp-jshint": "^1.5.5",
     "gulp-jsonlint": "0.0.3",
     "gulp-load-plugins": "^0.5.0",
     "jshint-stylish": "^0.1.5",
-    "tape": "^2.12.3"
+    "tape": "^2.12.3",
+    "testling": "^1.6.1"
   },
   "testling": {
     "files": "test.js",
