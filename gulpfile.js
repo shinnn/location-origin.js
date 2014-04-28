@@ -2,14 +2,13 @@
 
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
-
 var stylish = require('jshint-stylish');
 
 gulp.task('lint', function() {
-  gulp.src('*.js')
+  gulp.src(['*.js'])
     .pipe($.jshint())
     .pipe($.jshint.reporter(stylish));
-  gulp.src('*.json')
+  gulp.src(['*.json'])
     .pipe($.jsonlint())
     .pipe($.jsonlint.reporter());
 });
@@ -28,7 +27,7 @@ gulp.task('coffee', function() {
 
 gulp.task('watch', function() {
   gulp.watch(['src/*.coffee'], ['coffee']);
-  gulp.watch(['*.{js,json}'], ['lint']);
+  gulp.watch(['*.{js,json}', '.jshintrc'], ['lint']);
 });
 
 gulp.task('build', ['lint', 'coffee']);
