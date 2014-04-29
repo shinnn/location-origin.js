@@ -47,7 +47,7 @@
     "gulp-jshint": "^1.5.5",
     "gulp-jsonlint": "0.0.3",
     "gulp-load-plugins": "^0.5.0",
-    "jshint-stylish": "^0.1.5",
+    "jshint-stylish": "^0.2.0",
     "tape": "^2.12.3",
     "testling": "^1.6.1"
   },
