@@ -1,4 +1,5 @@
 {
+  "camelcase": true,
   "indent": 2,
   "quotmark": "single",
   "browser": true,

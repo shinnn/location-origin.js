@@ -16,7 +16,7 @@ gulp.task('lint', function() {
 gulp.task('coffee', function() {
   return gulp.src(['src/*.coffee'])
     .pipe($.coffeelint({
-      max_line_length: {
+      max_line_length: { // jshint ignore:line
         value: 85
       }
     }))
