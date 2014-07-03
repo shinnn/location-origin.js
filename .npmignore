@@ -1,7 +1,8 @@
-.travis.yml
+.editorconfig
 .jshintrc
-gulpfile.js
+.travis.yml
 src/
-test.js
 bower.json
 component.json
+gulpfile.js
+test.js
