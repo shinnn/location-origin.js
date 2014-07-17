@@ -1,6 +1,6 @@
 {
   "name": "location-origin",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "Polyfill for window.location.origin",
   "main": "dist/location-origin.js",
   "scripts": {
