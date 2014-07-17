@@ -1,3 +1,5 @@
+/* jshint browser: true */
+
 require('./dist/location-origin.js');
 var test = require('tape');
 
