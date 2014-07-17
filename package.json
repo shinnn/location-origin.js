@@ -5,7 +5,7 @@
   "main": "dist/location-origin.js",
   "scripts": {
     "build": "gulp build",
-    "test": "npm run-script build && testling"
+    "test": "${npm_package_scripts_build} && testling"
   },
   "author": {
     "name": "Shinnosuke Watanabe",
