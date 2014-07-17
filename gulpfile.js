@@ -6,6 +6,7 @@ var stylish = require('jshint-stylish');
 
 gulp.task('lint', function() {
   gulp.src(['*.js'])
+    .pipe($.jscs('.jscs.json'))
     .pipe($.jshint())
     .pipe($.jshint.reporter(stylish));
   gulp.src(['*.json'])
