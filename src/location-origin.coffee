@@ -8,9 +8,8 @@ loc = window.location
 
 return if loc.origin
 
-value = "
-#{ loc.protocol }//#{ loc.hostname }#{ if loc.port then ":#{ loc.port }" else '' }
-"
+value = loc.protocol + '//' + loc.hostname + if loc.port then ':' + loc.port else ''
+
 try
   Object.defineProperty loc, 'origin', {value, enumerable: true}
 catch

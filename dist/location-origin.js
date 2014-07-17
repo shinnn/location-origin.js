@@ -8,7 +8,7 @@
     return;
   }
 
-  value = "" + loc.protocol + "//" + loc.hostname + (loc.port ? ":" + loc.port : '');
+  value = loc.protocol + '//' + loc.hostname + (loc.port ? ':' + loc.port : '');
 
   try {
     Object.defineProperty(loc, 'origin', {
