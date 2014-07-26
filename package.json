@@ -40,17 +40,17 @@
     "browser"
   ],
   "devDependencies": {
-    "browserify": "^4.2.1",
+    "browserify": "^5.9.1",
     "gulp": "^3.8.6",
     "gulp-coffee": "^2.1.1",
     "gulp-coffeelint": "^0.3.3",
     "gulp-header": "^1.0.5",
-    "gulp-jscs": "^0.6.0",
-    "gulp-jshint": "^1.7.1",
+    "gulp-jscs": "^1.0.0",
+    "gulp-jshint": "^1.8.0",
     "gulp-jsonlint": "0.0.3",
     "gulp-load-plugins": "^0.5.3",
     "jshint-stylish": "^0.4.0",
-    "tape": "^2.13.3",
+    "tape": "^2.13.4",
     "testling": "^1.7.0"
   },
   "testling": {
