@@ -48,4 +48,6 @@ Thanks, [tosbourn](https://github.com/tosbourn).
 
 ## License
 
-[The Unlicense](./LICENSE)
+[src/location-origin.coffee](./src/location-origin.coffee) and [dist/location-origin.js](./dist/location-origin.js) are licensed under [the Unlicense](./LICENSE-UNLICENSE).
+
+All other source code is licensed under [the MIT license](./LICENSE-MIT).
