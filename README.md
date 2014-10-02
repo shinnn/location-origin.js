@@ -17,7 +17,7 @@ window.location.origin; //=> "http://yourhost:5000"
 
 ## Installation
 
-### Install with package manager
+### Package managers
 
 #### [Bower](http://bower.io/)
 
@@ -25,16 +25,18 @@ window.location.origin; //=> "http://yourhost:5000"
 bower i --save location-origin
 ```
 
-#### [Component](http://component.io/)
-
-```
-component install shinnn/location-origin.js
-```
-
-#### [npm](https://www.npmjs.org/) (Use with [Browserify](http://browserify.org/) etc.)
+#### [npm](https://www.npmjs.org/)
 
 ```
 npm i --save location-origin
+```
+
+#### [Duo](http://duojs.org/)
+
+```javascript
+// You don't have to assign it to a variable.
+// It automatically adds `origin` property to the window.location object when it is `require`d.
+require("shinnn/location-origin.js");
 ```
 
 ### Standalone
