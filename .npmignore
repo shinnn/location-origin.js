@@ -1,4 +1,5 @@
 .editorconfig
+.gitattributes
 .jscs.json
 .jshintrc
 .travis.yml
