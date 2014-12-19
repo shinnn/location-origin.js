@@ -7,12 +7,12 @@
 
 [![browser support](https://ci.testling.com/shinnn/location-origin.js.png)](https://ci.testling.com/shinnn/location-origin.js)
 
-Polyfill for [`window.location.origin`](http://url.spec.whatwg.org/#dom-url-origin)
+Polyfill for [`window.location.origin`](https://url.spec.whatwg.org/#dom-urlutilsreadonly-origin)
 
-```js
-// On http://yourhost:5000/path/to/page
+```javascript
+// On http://localhost:8888/path/to/page.html#hash?search=foobar
 
-window.location.origin; //=> "http://yourhost:5000"
+window.location.origin; //=> "http://localhost:8888"
 ```
 
 ## Installation
@@ -21,14 +21,14 @@ window.location.origin; //=> "http://yourhost:5000"
 
 #### [Bower](http://bower.io/)
 
-```
-bower i --save location-origin
+```sh
+bower install location-origin
 ```
 
 #### [npm](https://www.npmjs.com/)
 
-```
-npm i --save location-origin
+```sh
+npm install location-origin
 ```
 
 #### [Duo](http://duojs.org/)
