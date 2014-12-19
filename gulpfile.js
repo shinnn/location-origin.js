@@ -2,34 +2,43 @@
 
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
+var rimraf = require('rimraf');
 var stylish = require('jshint-stylish');
 
-gulp.task('lint', function() {
-  gulp.src(['*.js'])
-    .pipe($.jscs('.jscs.json'))
+var pkg = require('./package.json');
+
+gulp.task('lint:scripts', function() {
+  return gulp.src('*.js')
+    .pipe($.jscs('package.json'))
     .pipe($.jshint())
-    .pipe($.jshint.reporter(stylish));
-  gulp.src(['*.json'])
+    .pipe($.jshint.reporter(stylish))
+    .pipe($.jshint.reporter('fail'));
+});
+
+gulp.task('lint:json', function() {
+  return gulp.src('*.json')
     .pipe($.jsonlint())
     .pipe($.jsonlint.reporter());
 });
 
-gulp.task('coffee', function() {
+gulp.task('lint', ['lint:scripts', 'lint:json']);
+
+gulp.task('clean', rimraf.bind(null, 'dist'));
+
+gulp.task('coffee', ['lint'], function() {
   return gulp.src(['src/*.coffee'])
-    .pipe($.coffeelint({
-      max_line_length: { // jshint ignore:line
-        value: 85
-      }
-    }))
+    .pipe($.coffeelint())
     .pipe($.coffeelint.reporter())
     .pipe($.coffee())
-    .pipe(gulp.dest('dist'));
+    .pipe($.rename(pkg.main))
+    .pipe($.size({showFiles: true}))
+    .pipe(gulp.dest(''));
 });
 
 gulp.task('watch', function() {
-  gulp.watch(['src/*.coffee'], ['coffee']);
+  gulp.watch('src/*.coffee', ['coffee']);
   gulp.watch(['*.{js,json}', '.jshintrc'], ['lint']);
 });
 
-gulp.task('build', ['lint', 'coffee']);
+gulp.task('build', ['coffee']);
 gulp.task('default', ['build', 'watch']);
