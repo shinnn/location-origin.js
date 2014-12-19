@@ -1,6 +1,5 @@
 {
   "name": "location-origin",
-  "version": "1.2.0",
   "description": "Polyfill for window.location.origin",
   "keywords": [
     "location",
@@ -29,11 +28,10 @@
   "license": "Unlicense",
   "ignore": [
     "**/.*",
+    "*.js",
+    "*.json",
+    "LICENSE-MIT",
     "node_modules",
-    "src",
-    "test.js",
-    "gulpfile.js",
-    "package.json",
-    "component.json"
+    "src"
   ]
 }

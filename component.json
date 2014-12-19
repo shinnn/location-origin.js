@@ -18,5 +18,8 @@
   "scripts": [
     "dist/location-origin.js"
   ],
+  "files": [
+    "LICENSE-UNLICENSE"
+  ],
   "license": "Unlicense"
 }
