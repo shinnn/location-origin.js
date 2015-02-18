@@ -1,15 +1,15 @@
 'use strict';
 
+var pkg = require('./package.json');
+
 var gulp = require('gulp');
-var $ = require('gulp-load-plugins')();
+var $ = require('gulp-load-plugins')({config: pkg});
 var rimraf = require('rimraf');
 var stylish = require('jshint-stylish');
 
-var pkg = require('./package.json');
-
 gulp.task('lint:scripts', function() {
   return gulp.src('*.js')
-    .pipe($.jscs('package.json'))
+    .pipe($.jscs(pkg.jscsConfig))
     .pipe($.jshint())
     .pipe($.jshint.reporter(stylish))
     .pipe($.jshint.reporter('fail'));
@@ -25,7 +25,7 @@ gulp.task('lint', ['lint:scripts', 'lint:json']);
 
 gulp.task('clean', rimraf.bind(null, 'dist'));
 
-gulp.task('coffee', ['lint'], function() {
+gulp.task('build', ['lint'], function() {
   return gulp.src(['src/*.coffee'])
     .pipe($.coffeelint())
     .pipe($.coffeelint.reporter())
@@ -40,5 +40,4 @@ gulp.task('watch', function() {
   gulp.watch(['*.{js,json}', '.jshintrc'], ['lint']);
 });
 
-gulp.task('build', ['coffee']);
 gulp.task('default', ['build', 'watch']);
