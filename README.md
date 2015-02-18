@@ -1,9 +1,9 @@
 # location-origin.js
 
-[![Bower version](https://img.shields.io/bower/v/location-origin.svg?style=flat)](https://github.com/shinnn/location-origin.js/releases)
-[![NPM version](https://img.shields.io/npm/v/location-origin.svg?style=flat)](https://www.npmjs.com/package/location-origin)
-[![Build Status](https://img.shields.io/travis/shinnn/location-origin.js.svg?style=flat)](https://travis-ci.org/shinnn/location-origin.js)
-[![devDependency Status](https://david-dm.org/shinnn/location-origin.js/dev-status.svg?style=flat)](https://david-dm.org/shinnn/location-origin.js#info=devDependencies)
+[![Bower version](https://img.shields.io/bower/v/location-origin.svg)](https://github.com/shinnn/location-origin.js/releases)
+[![NPM version](https://img.shields.io/npm/v/location-origin.svg)](https://www.npmjs.com/package/location-origin)
+[![Build Status](https://img.shields.io/travis/shinnn/location-origin.js.svg)](https://travis-ci.org/shinnn/location-origin.js)
+[![devDependency Status](https://david-dm.org/shinnn/location-origin.js/dev-status.svg)](https://david-dm.org/shinnn/location-origin.js#info=devDependencies)
 
 [![browser support](https://ci.testling.com/shinnn/location-origin.js.png)](https://ci.testling.com/shinnn/location-origin.js)
 
